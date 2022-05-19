@@ -1,0 +1,44 @@
+{
+  "name": "package-template-javascript",
+  "version": "0.1.0",
+  "description": "Software webpack template for nodejs javascript scripting language : version 0.1",
+  "main": "src",
+  "directories": {
+    "doc": "docs",
+    "test": "tests",
+    "lib": "src",
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1.git"
+  },
+  "engines": {
+    "node": "^v16.14.2",
+    "vscode": "^1.22.0"
+  },
+  "keywords": [
+    "nodejs",
+    "linux",
+    "docker",
+    "template",
+    "package",
+    "library",
+    "module",
+    "conventional-commits",
+    "dev-container"
+  ],
+  "author": {
+    "name": "Azmi ŞAHİN",
+    "email": "azmisahin@outlook.com",
+    "url": "https://github.com/azmisahin"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1/issues"
+  },
+  "homepage": "https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1#readme"
+}
