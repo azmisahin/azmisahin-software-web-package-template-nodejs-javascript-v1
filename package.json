@@ -23,7 +23,8 @@
     "coverage:text": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=text --coverageDirectory=reports/test > reports/test/coverage.txt",
     "coverage:xml": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=cobertura --coverageDirectory=reports/test",
     "coverage": "jest --collectCoverage --passWithNoTests --detectOpenHandles",
-    "document": "jsdoc -c jsdoc.json"
+    "document": "jsdoc -c jsdoc.json",
+    "build": "npm run prettier && npm run lint && npm run test && npm run coverage && npm run document"
   },
   "repository": {
     "type": "git",
