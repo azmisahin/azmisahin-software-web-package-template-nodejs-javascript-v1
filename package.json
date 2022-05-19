@@ -22,7 +22,8 @@
     "coverage:json": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=json --coverageDirectory=reports/test",
     "coverage:text": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=text --coverageDirectory=reports/test > reports/test/coverage.txt",
     "coverage:xml": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=cobertura --coverageDirectory=reports/test",
-    "coverage": "jest --collectCoverage --passWithNoTests --detectOpenHandles"
+    "coverage": "jest --collectCoverage --passWithNoTests --detectOpenHandles",
+    "document": "jsdoc -c jsdoc.json"
   },
   "repository": {
     "type": "git",
@@ -54,9 +55,11 @@
   },
   "homepage": "https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1#readme",
   "devDependencies": {
+    "better-docs": "^2.7.2",
     "eslint": "^8.15.0",
     "jest": "^28.1.0",
     "jest-junit": "^13.2.0",
+    "jsdoc": "^3.6.10",
     "prettier": "2.6.2"
   }
 }
