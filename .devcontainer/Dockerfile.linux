@@ -35,7 +35,9 @@ WORKDIR ${WORK_DIR}
 COPY . .
 
 # install project dependencies
-RUN apt-get update
+RUN sudo apt-get update
+RUN sudo apt-get install git
+RUN sudo apt-get install git-flow
 
 # build
 RUN mkdir ${BUILD_DIR} && \
