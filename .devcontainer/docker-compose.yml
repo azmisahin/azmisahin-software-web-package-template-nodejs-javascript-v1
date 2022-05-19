@@ -21,7 +21,7 @@ services:
         com.azmisahin.department: "DEVOPS"
       # stage
       target: ${ENV}
-    container_name: ${NAME}-${CONTAINER}
+    container_name: ${NAME}-${ENV}-${CONTAINER}
     environment:
       # build
       NAME: ${NAME}

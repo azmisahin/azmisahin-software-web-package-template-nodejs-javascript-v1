@@ -33,7 +33,7 @@
     "url": "git+https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1.git"
   },
   "engines": {
-    "node": "^v16.14.2",
+    "node": ">=16.14.2",
     "vscode": "^1.22.0"
   },
   "keywords": [
