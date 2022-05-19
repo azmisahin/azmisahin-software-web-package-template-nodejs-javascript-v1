@@ -10,7 +10,10 @@
     "example": "example"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:config": "eslint docs --fix --no-error-on-unmatched-pattern",
+    "lint:src": "eslint src --fix --no-error-on-unmatched-pattern",
+    "lint:test-unit": "eslint tests/unit --fix --no-error-on-unmatched-pattern",
+    "lint": "npm run lint:config && npm run lint:src && npm run lint:test-unit"
   },
   "repository": {
     "type": "git",
@@ -40,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1/issues"
   },
-  "homepage": "https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1#readme"
+  "homepage": "https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1#readme",
+  "devDependencies": {
+    "eslint": "^8.15.0"
+  }
 }
