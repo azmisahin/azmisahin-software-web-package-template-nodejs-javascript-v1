@@ -14,7 +14,10 @@
     "lint:src": "eslint src --fix --no-error-on-unmatched-pattern",
     "lint:test-unit": "eslint tests/unit --fix --no-error-on-unmatched-pattern",
     "lint": "npm run lint:config && npm run lint:src && npm run lint:test-unit",
-    "prettier": "prettier --write docs src tests *.js *.json"
+    "prettier": "prettier --write docs src tests *.js *.json",
+    "test:unit": "jest --passWithNoTests --detectOpenHandles",
+    "test:text": "jest --passWithNoTests --detectOpenHandles --no-color 2>reports/test/test.txt",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -47,6 +50,8 @@
   "homepage": "https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1#readme",
   "devDependencies": {
     "eslint": "^8.15.0",
+    "jest": "^28.1.0",
+    "jest-junit": "^13.2.0",
     "prettier": "2.6.2"
   }
 }

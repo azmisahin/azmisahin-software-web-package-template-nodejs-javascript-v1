@@ -38,6 +38,7 @@ COPY . .
 RUN sudo apt-get update
 RUN sudo apt-get install git
 RUN sudo apt-get install git-flow
+RUN sudo npm install jest --global
 
 # build
 RUN mkdir ${BUILD_DIR} && \

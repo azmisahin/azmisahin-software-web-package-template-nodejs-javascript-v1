@@ -15,7 +15,8 @@
 		"dbaeumer.vscode-eslint",
 		"Serhioromano.vscode-gitflow",
 		"mhutchie.git-graph",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"Orta.vscode-jest"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
