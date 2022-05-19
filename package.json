@@ -17,7 +17,8 @@
     "prettier": "prettier --write docs src tests *.js *.json",
     "test:unit": "jest --passWithNoTests --detectOpenHandles",
     "test:text": "jest --passWithNoTests --detectOpenHandles --no-color 2>reports/test/test.txt",
-    "test": "jest",
+    "test:features": "npx cucumber-js",
+    "test": "npm run test:unit && npm run test:features",
     "coverage:html": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=html --coverageDirectory=reports/coverage",
     "coverage:json": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=json --coverageDirectory=reports/test",
     "coverage:text": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=text --coverageDirectory=reports/test > reports/test/coverage.txt",
@@ -57,6 +58,7 @@
   },
   "homepage": "https://github.com/azmisahin/com-azmisahin-software-web-package-template-nodejs-javascript-v1#readme",
   "devDependencies": {
+    "@cucumber/cucumber": "^8.2.1",
     "better-docs": "^2.7.2",
     "eslint": "^8.15.0",
     "husky": "^8.0.0",
