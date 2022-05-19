@@ -17,7 +17,12 @@
     "prettier": "prettier --write docs src tests *.js *.json",
     "test:unit": "jest --passWithNoTests --detectOpenHandles",
     "test:text": "jest --passWithNoTests --detectOpenHandles --no-color 2>reports/test/test.txt",
-    "test": "jest"
+    "test": "jest",
+    "coverage:html": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=html --coverageDirectory=reports/coverage",
+    "coverage:json": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=json --coverageDirectory=reports/test",
+    "coverage:text": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=text --coverageDirectory=reports/test > reports/test/coverage.txt",
+    "coverage:xml": "jest --collectCoverage --passWithNoTests --detectOpenHandles --coverageReporters=cobertura --coverageDirectory=reports/test",
+    "coverage": "jest --collectCoverage --passWithNoTests --detectOpenHandles"
   },
   "repository": {
     "type": "git",
