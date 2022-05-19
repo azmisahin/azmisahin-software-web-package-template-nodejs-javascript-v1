@@ -1,6 +1,18 @@
 # Introduction
 Software webpack template for nodejs javascript scripting language : version 0.1
 
+## Example
+```js
+// package define
+const Template = require('../src')
+
+// module instance
+var template = new Template()
+
+// a normal status code is returned when the package runs successfully.
+process.exit(template instanceof Template == true ? 0 : 1)
+```
+
 # Getting Started
 TO DO: Things to do when getting started on this project.
 - [Documentation](docs/README.md).
