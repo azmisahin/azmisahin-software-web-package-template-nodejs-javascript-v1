@@ -1,6 +1,5 @@
-# Introduction 
-azmisahin-$groupName-$typeName-$projectName-$productName-$languageName
-[com.azmisahin.$groupName.$typeName.$projectName.$productName.$languageName] Entry-level workspace for azmisahin.
+# Introduction
+Software webpack template for nodejs javascript scripting language : version 0.1
 
 # Getting Started
 TO DO: Things to do when getting started on this project.
