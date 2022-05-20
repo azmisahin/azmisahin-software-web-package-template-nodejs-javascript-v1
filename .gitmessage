@@ -1,3 +1,4 @@
+# !version: 0.1.0
 # <type>: <subject> (Max 50 char, Why is this change necessary?)
 # |<----  Using a Maximum Of 50 Characters  ---->|
 
@@ -29,63 +30,64 @@
 
 # feature: meet standards for git processing messages [#0]
 
-# --- Base tag
-# ✨ Features: A new feature
-# 🐛 Fix: A bug fix
-# 📝 Docs: Documentation only changes
-# 💄 Style: Changes that do not affect meaning of code
-# ♻️ Refactor: A code change that neither fixes a bug or adds a feature
-# ⚡️ Performance: A code change that improves performance
-# ✅ Test: Adding missing test
-# 🚑 Hotfix: A critical bug fix
-# --- Additional  tag
-# 🚧 Work in progress:
-# 🎨 Improving structure / format:
-# 🏗 Making architectural changes:
-# 🔀 Merging branches:
-# 🔥 Removing code or files:
-# 🔊 Adding logs
-# 🔇 Removing logs
-# ➕ Adding a dependency:
-# ➖ Removing a dependency:
-# ⬆️  Upgrading dependencies:
-# ⬇️  Downgrading dependencies:
-# 📦 Updating compiled files or packages:
-# 🚀 Deploying stuff:
-# 🔒 Fixing security issues:
-# 🔖 Releasing / Version tags:
-# 🎉 Initial commit:
-# 🚨 Removing linter warnings:
-# 💚 Fixing CI Build:
-# 📌 Pinning dependencies to specific versions:
-# 👷 Adding CI build system:
-# 📈 Adding analytics or tracking code:
-# 🐳 Work about Docker:
-# 🔧 Changing configuration files:
-# 🌐 Internationalization and localization:
-# ✏️  Fixing typos:
-# 💩 Writing bad code that needs to be improved:
-# ⏪ Reverting changes:
-# 👽 Updating code due to external API changes:
-# 🚚 Moving or renaming files:
-# 📄 Adding or updating license:
-# 💥 Introducing breaking changes:
-# 🍱 Adding or updating assets:
-# 👌 Updating code due to code review changes:
-# ♿️ Improving accessibility:
-# 💡 Documenting source code:
-# 🍻 Writing code drunkenly:
-# 💬 Updating text and literals:
-# 🗃 Performing database related changes:
-# 👥 Adding contributor(s):
-# 🚸 Improving user experience / usability:
-# 📱 Working on responsive design:
-# 🍎 Fixing something on macOS:
-# 🐧 Fixing something on Linux:
-# 🏁 Fixing something on Windows:
-# 🤖 Fixing something on Android:
-# 🍏 Fixing something on iOS:
-# 🤡 Mocking things:
-# 🥚 Adding an easter egg:
-# 🙈 Adding or updating a .gitignore file
-# 📸 Adding or updating snapshots
+# <type>: <subject>
+# ✨: a new feature
+# 🐛: a bug fix
+# 📝: documentation only changes
+# 💄: changes that do not affect meaning of code
+# ♻️: a code change that neither fixes a bug or adds a feature
+# ⚡️: a code change that improves performance
+# ✅: adding missing test
+# 🚑: a critical bug fix
+
+# <type>: <subject> additional  tag
+# 🚧: work in progress
+# 🎨: improving structure / format
+# 🏗: making architectural changes
+# 🔀: merging branches
+# 🔥: removing code or files
+# 🔊: adding logs
+# 🔇: removing logs
+# ➕: adding a dependency
+# ➖: removing a dependency
+# ⬆️: upgrading dependencies
+# ⬇️: downgrading dependencies
+# 📦: updating compiled files or packages
+# 🚀: deploying stuff
+# 🔒: fixing security issues
+# 🔖: releasing / version tags
+# 🎉: initial commit
+# 🚨: removing linter warnings
+# 💚: fixing CI Build
+# 📌: pinning dependencies to specific versions
+# 👷: adding CI build system
+# 📈: adding analytics or tracking code
+# 🐳: work about Docker
+# 🔧: changing configuration files
+# 🌐: internationalization and localization
+# ✏️: fixing typos
+# 💩: writing bad code that needs to be improved
+# ⏪: reverting changes
+# 👽: updating code due to external API changes
+# 🚚: moving or renaming files
+# 📄: adding or updating license
+# 💥: introducing breaking changes
+# 🍱: adding or updating assets
+# 👌: updating code due to code review changes
+# ♿️: improving accessibility
+# 💡: documenting source code
+# 🍻: writing code drunkenly
+# 💬: updating text and literals
+# 🗃: performing database related changes
+# 👥: adding contributor(s)
+# 🚸: improving user experience / usability
+# 📱: working on responsive design
+# 🍎: fixing something on macOS
+# 🐧: fixing something on Linux
+# 🏁: fixing something on Windows
+# 🤖: fixing something on Android
+# 🍏: fixing something on iOS
+# 🤡: mocking things
+# 🥚: adding an easter egg
+# 🙈: adding or updating a .gitignore file
+# 📸: adding or updating snapshots
