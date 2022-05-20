@@ -18,7 +18,8 @@
 		"esbenp.prettier-vscode",
 		"Orta.vscode-jest",
 		"CucumberOpen.cucumber-official",
-		"alexkrechik.cucumberautocomplete"
+		"alexkrechik.cucumberautocomplete",
+		"hediet.vscode-drawio"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
