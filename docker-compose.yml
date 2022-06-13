@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile.${CONTAINER}
       args:
         # build
-        NAME: ${NAME}
+        APP_NAME: ${APP_NAME}
         WORK_DIR: ${WORK_DIR}
         BUILD_DIR: ${BUILD_DIR}
         DIST_DIR: ${DIST_DIR}
@@ -15,21 +15,30 @@ services:
         # application
 
       labels:
-        com.azmisahin.description: ${NAME}
+        com.azmisahin.description: ${APP_NAME}
         com.azmisahin.department: "DEVOPS"
       # stage
-      target: ${ENV}
-    container_name: ${NAME}-${ENV}-${CONTAINER}
+      target: ${APP_ENV}
+    container_name: ${APP_NAME}-${APP_ENV}-${CONTAINER}
     environment:
       # build
-      NAME: ${NAME}
+      APP_NAME: ${APP_NAME}
       WORK_DIR: ${WORK_DIR}
       BUILD_DIR: ${BUILD_DIR}
       DIST_DIR: ${DIST_DIR}
 
       # application
 
-    networks:
-      default: null
-    restart: "no"
-    tty: true
+    # volumes:
+    #   - ..:/vhost
+
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity
+    # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
+    # network_mode: service:xxx
+
+    # Uncomment the next line to use a non-root user for all processes.
+    # user: node
+
+    # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
+    # (Adding the "ports" property to this file will not forward from a Codespace.)

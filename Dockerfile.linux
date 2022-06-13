@@ -5,8 +5,8 @@ FROM node:latest AS production
 LABEL maintainer="Azmi ŞAHİN <azmisahin@outlook.com>"
 
 # product arguments
-ARG ENV="production"
-ARG NAME="template"
+ARG APP_ENV="production"
+ARG APP_NAME="template"
 
 # default arguments for build
 ARG WORK_DIR="/template"
@@ -17,8 +17,8 @@ ARG DIST_DIR="dist"
 
 
 # product environment
-ENV ENV=${ENV}
-ENV NAME=${NAME}
+ENV APP_ENV=${APP_ENV}
+ENV APP_NAME=${APP_NAME}
 
 # default envionment for build
 ENV WORK_DIR=${WORK_DIR}
@@ -43,4 +43,4 @@ RUN mkdir ${BUILD_DIR} && \
     mkdir ${DIST_DIR}
 
 # test
-CMD ["npm", "run", "test:features"]
+# CMD ["npm", "run", "test:features"]
