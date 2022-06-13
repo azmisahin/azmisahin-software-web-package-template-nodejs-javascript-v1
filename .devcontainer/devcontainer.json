@@ -6,29 +6,30 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "application",
 	"workspaceFolder": "/workspace",
-
 	// Set *default* container specific settings.json values on container create.
 	"settings": {},
-
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"dbaeumer.vscode-eslint",
+		"ms-azuretools.vscode-docker",
 		"Serhioromano.vscode-gitflow",
 		"mhutchie.git-graph",
+		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
-		"Orta.vscode-jest",
-		"CucumberOpen.cucumber-official",
-		"alexkrechik.cucumberautocomplete",
 		"hediet.vscode-drawio"
 	],
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or with the host.
 	// "forwardPorts": [3000, 5432],
-
+	// submodules before the container is created.
+	// "initializeCommand": "git submodule update --init --remote",
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install",
-
+	// "postCreateCommand": "docker --version",
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node"
+	"remoteUser": "node",
+	// features to add to the dev container
+	"features": {
+		"docker-from-docker": "latest"
+		// "docker-in-docker": "latest",
+		// "git": "latest"
+	}
 }
