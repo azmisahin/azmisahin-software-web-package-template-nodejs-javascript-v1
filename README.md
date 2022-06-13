@@ -1,6 +1,8 @@
 # Introduction
 Software webpack template for nodejs javascript scripting language : version 0.1
 
+🔖: releasing / 0.1.2
+
 ## Example
 ```js
 // package define
