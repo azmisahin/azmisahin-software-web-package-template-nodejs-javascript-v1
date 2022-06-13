@@ -18,8 +18,8 @@ ARG DIST_DIR="dist"
 # default arguments for application
 
 # product environment
-ENV APP_ENV=${ENV}
-ENV APP_NAME=${NAME}
+ENV APP_ENV=${APP_ENV}
+ENV APP_NAME=${APP_NAME}
 
 # default envionment for build
 ENV WORK_DIR=${WORK_DIR}
