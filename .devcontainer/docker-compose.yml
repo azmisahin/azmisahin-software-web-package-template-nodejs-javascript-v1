@@ -20,7 +20,7 @@ services:
         com.azmisahin.description: ${APP_NAME}
         com.azmisahin.department: "DEVOPS"
       # stage
-      target: ${APP_ENV}}
+      target: ${APP_ENV}
     container_name: ${APP_NAME}-${APP_ENV}-${CONTAINER}
     environment:
       # build
